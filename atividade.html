@@ -3,66 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal de Futebol</title>
+    <title>Jornal Nacional - Notícia da Final da Libertadores 2017</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            background-color: #d3f4f8; /* Cor de fundo modificada para um tom de azul claro */
         }
-        header {
-            background: #0275d8;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+        /* Contêiner para as imagens */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Espaçamento entre as imagens */
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .news {
-            background: white;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .news h2 {
-            color: #333;
-        }
-        .news p {
-            color: #666;
-        }
-        .news img {
-            width: 100%;
+        .image-container img {
+            width: 32%; /* As imagens terão uma largura de 32% para ficarem lado a lado */
             height: auto;
-            border-radius: 5px;
-            margin-top: 10px;
+        }
+        /* Estilo para a quarta imagem, que deve aparecer em cima das outras */
+        .top-image {
+            width: 100%; /* A quarta imagem ocupa 100% da largura */
+            height: auto;
+            margin-bottom: 20px; /* Espaço abaixo da imagem */
         }
     </style>
 </head>
 <body>
     <header>
-        Jornal de Futebol
+        Jornal Nacional - Últimas notícias da final da Libertadores 2017
     </header>
     <div class="container">
         <div class="news">
-            <h2>Grande Clásico Hoje!</h2>
-            <p>O grande clássico entre os times rivais acontece hoje às 20h. Fique por dentro das escalações e expectativas para a partida.</p>
-            <img src="https://www.rbsdirect.com.br/imagesrc/23942387.jpg?w=700
-        " alt="Imagem do clássico de futebol">
+            <h2>Final da Copa da Libertadores!</h2>
+            <p>Gols: Lanús (ARG) 1 x 2 Grêmio - Final Libertadores 2017.</p>
         </div>
+        
+        <!-- Contêiner para a quarta imagem em cima das outras -->
+        <div class="image-container">
+            <img class="top-image" src="https://i.ytimg.com/vi/bhgxsBziv6U/maxresdefault.jpg" alt="Imagem principal da final">
+        </div>
+
+        <!-- Contêiner com as três imagens lado a lado -->
+        <div class="image-container">
+            <img src="https://www.rbsdirect.com.br/imagesrc/23942387.jpg?w=700" alt="Imagem do clássico de futebol">
+            <img src="https://i.superesportes.com.br/1iSxCAe_UhKLt40uoSjL9LkVyks=/smart/imgsapp.mg.superesportes.com.br/app/noticia_126420360808/2017/11/30/444522/20171130095409207110u.jpg" alt="Imagem 2">
+            <img src="https://pm1.aminoapps.com/6663/ea1a6c86bce844675bc5c8339d61f5aa9e44724d_hq.jpg" alt="Imagem 3">
+        </div> 
+
         <div class="news">
-            <h2>Transferência Surpreendente</h2>
-            <p>Um dos maiores craques do futebol mundial está de mudança para um novo clube. Saiba mais sobre essa negociação milionária.</p>
+            <h2>Grêmio é Tricampeão da Libertadores: 1983, 1995, 2017</h2>
+            <p>Até onde iremos para que der e vier, mas o certo é que nós estaremos com o Grêmio, onde o Grêmio estiver.</p>
         </div>
     </div>
 </body>
 </html>
-
-
 
