@@ -1,0 +1,7 @@
+nome da pessoa que vai pegar a sala 
+verificar quantidade de alunos , se o sala esta disponivel 
+chegar se entregar a chave 
+(secundario) filtros de datas 
+relatorio de devoluçao (importante)
+sistema simples , livros grandes, personalizaçao da informaçoes , alerta de socorro
+visualizaçao limpa e simples
