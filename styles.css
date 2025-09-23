@@ -1,0 +1,13 @@
+:root{--bg:#f4f6f8;--card:#fff;--accent:#1f6feb}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);padding:24px}
+.container{max-width:900px;margin:0 auto;background:var(--card);padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(20,20,20,0.06)}
+h1{margin-top:0;color:var(--accent)}
+section{margin:18px 0;padding:12px;border:1px solid #eee;border-radius:8px}
+label{display:block;margin:8px 0}
+input, button, select{padding:8px;border-radius:6px;border:1px solid #ccc}
+button{background:var(--accent);color:#fff;border:none;cursor:pointer}
+#rooms-list li{padding:6px 0}
+.inline-form{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.inline-form input{min-width:120px}
+#reserve-result, #report-result{margin-top:12px;padding:8px;background:#fafafa;border-radius:6px;border:1px solid #eee}

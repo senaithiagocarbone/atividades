@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reserva de Salas - Protótipo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Reserva de Salas - Protótipo</h1>
+
+    <section id="rooms-section">
+      <h2>Salas</h2>
+      <ul id="rooms-list"><li>carregando...</li></ul>
+      <form id="create-room-form" class="inline-form">
+        <input name="nome" placeholder="Nome da sala" required />
+        <input name="codigo" placeholder="Código" required />
+        <input name="capacidade" type="number" placeholder="Capacidade" />
+        <input name="tipo_id" type="number" placeholder="Tipo ID (opcional)" />
+        <button type="submit">Criar Sala</button>
+      </form>
+    </section>
+
+    <section id="reserve-section">
+      <h2>Criar Reserva</h2>
+      <form id="reserve-form">
+        <label>Usuário ID: <input type="number" name="usuario_id" value="1" required></label>
+        <label>Sala ID: <input type="number" name="sala_id" required></label>
+        <label>Data Início: <input type="datetime-local" name="data_inicio" required></label>
+        <label>Data Fim: <input type="datetime-local" name="data_fim" required></label>
+        <label>Finalidade: <input name="finalidade"></label>
+        <button type="submit">Reservar</button>
+      </form>
+      <div id="reserve-result"></div>
+    </section>
+
+    <section id="reports-section">
+      <h2>Relatórios (Horas por Curso)</h2>
+      <form id="report-form" class="inline-form">
+        <label>Data Início: <input type="date" name="data_inicio"></label>
+        <label>Data Fim: <input type="date" name="data_fim"></label>
+        <button type="submit">Gerar</button>
+      </form>
+      <div id="report-result"></div>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
